@@ -1,4 +1,4 @@
-name: MAD Practical 5.0
+name: MAD Practical 4.0
 on:
   push:
     branches: [main, master]
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Test Scripts
         uses: actions/checkout@v2
         with:
-          repository: lowkh/MAD_JunitPrac5
+          repository: lowkh/MAD_JunitPrac4
           path: testDirectory
       - name: Check files
         run: |
@@ -28,8 +28,8 @@ jobs:
 
       - name: Create Test Files
         run: |
-          cp testDirectory/Practice5Test.java app/src/test/java/sg/edu/np/mad/madpractical5/UserTest.java
-          cd app/src/test/java/sg/edu/np/mad/madpractical5
+          cp testDirectory/Practice4Test.java app/src/test/java/sg/edu/np/mad/madpractical4/UserTest.java
+          cd app/src/test/java/sg/edu/np/mad/madpractical4
 
   
       - name: Make gradlew executable
