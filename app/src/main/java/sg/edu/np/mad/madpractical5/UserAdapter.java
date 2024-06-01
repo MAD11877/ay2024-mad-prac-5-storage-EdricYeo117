@@ -1,4 +1,4 @@
-package sg.edu.np.mad.practical5;
+package sg.edu.np.mad.madpractical5;
 
 import android.view.LayoutInflater;
 import android.view.View;
