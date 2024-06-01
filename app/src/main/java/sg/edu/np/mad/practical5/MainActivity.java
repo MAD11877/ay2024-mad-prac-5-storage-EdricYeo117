@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        DatabaseHandler dbHandler = new DatabaseHandler(this, null, null, 1);
         // Initialize views
         tvName = findViewById(R.id.tvName);
         tvDescription = findViewById(R.id.tvDescription);
@@ -45,9 +45,17 @@ public class MainActivity extends AppCompatActivity {
                 updateButtonMessageText();
             }
         }
+        //Reading the random number
+        Intent receivingEnd = getIntent();
+        String name = receivingEnd.getStringExtra("name");
+        String description = receivingEnd.getStringExtra("description");
+        String followed = receivingEnd.getStringExtra("followed");
+        String id = receivingEnd.getStringExtra("id");
 
+        User user = dbHandler.getUser(name);
         // Setup follow button click listener
         setupFollowButton();
+
     }
 
     private void setupFollowButton() {
