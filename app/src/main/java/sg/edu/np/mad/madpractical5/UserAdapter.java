@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import sg.edu.np.mad.practical5.R;
+
 
 public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
     private ArrayList<User> userList;
