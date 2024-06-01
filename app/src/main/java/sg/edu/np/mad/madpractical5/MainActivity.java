@@ -9,8 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import sg.edu.np.mad.practical5.R;
-
 
 public class MainActivity extends AppCompatActivity {
 
