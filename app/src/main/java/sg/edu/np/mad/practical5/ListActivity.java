@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import sg.edu.np.mad.myapplication.R;
 
 public class ListActivity extends AppCompatActivity {
     private ArrayList<User> list;
